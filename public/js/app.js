@@ -29,7 +29,7 @@ weatherForm.addEventListener('submit', (e) => {
                             typeWriter(0, `${data.error}`, weatherDescription)
                         }
                         else {
-                            let text = `The current weather in ${location}, ${data.country} is ${data.description} with a temperature of ${data.temperature} C and it feels like ${data.feelsLike} C. There is a 10% chance of rain.`
+                            let text = `The current weather in ${location}, ${data.country} is ${data.description} with a temperature of ${data.temperature} C and it feels like ${data.feelsLike} C. ${data.precip > 0 ? `Current precipitation is ${data.precip}mm.` : ''}`
                             loader.classList.remove('loader-active')
                             typeWriter(0, text, weatherDescription)
                         }

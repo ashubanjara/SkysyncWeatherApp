@@ -37,7 +37,8 @@ const getForecast = (latitude, longitude, callback) => {
                 region: data.location.region,
                 description: data.current.weather_descriptions[0],
                 temperature: data.current.temperature,
-                feelsLike: data.current.feelslike
+                feelsLike: data.current.feelslike,
+                precip: data.current.precip
             })
         }
     })
