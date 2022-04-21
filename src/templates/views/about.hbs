@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/styles.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="main-page">
+            <div class="about-container">
+                <h2>
+                    How it works
+                </h2>
+                <div class="about-diagram">
+                    <img src="./images/weatherApp-diagram.svg">
+                </div>
+                <p>
+                    This weather app uses geocoding to convert location to coordinates
+                    using the PositionStack API, it picks the location with highest confidence (in the case 
+                    that there are multiple places with the same name). It then uses the coordinates to look up the weather 
+                    in that particular region using the WeatherStack API. The requests are made to the API's through a 
+                    Node.js/Express.js backend and sent to the front end, where the result is processed into a string and 
+                    displayed to the user.
+                </p>
+            </div>
+        </div>
+        <div class="footer">
+            {{>navigation}}
+            {{>footer}}
+        </div>
+    </body>
+</html>

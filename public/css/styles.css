@@ -1,0 +1,187 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #22a6b3;
+    font-family: 'Lato' !important; 
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    letter-spacing: 0.6px;
+}
+
+h2 {
+   letter-spacing: 0.6px;
+   font-weight: bold;
+}
+
+.title-container {
+    margin-top: 5vh;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 25vh;
+}
+
+.main-page {
+    height: 100vh;
+}
+
+.footer {
+    text-align: center;
+    color: white;
+    letter-spacing: 1.6px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(1,1,1,0.8)
+}
+
+.nav-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+}
+
+.about-container {
+    margin: 0 auto;
+    letter-spacing: 1.6px;
+    font-size: 20px;
+    color: white;
+    width: 82%;
+    line-height: 1.6;
+}
+
+.about-diagram {
+    width: 35.8vw;
+    padding: 25px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+img {
+    width: 32.617vw;
+}
+
+.weather-description {
+    margin: 0 auto;
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: 1.6px;
+    line-height: 1.6;
+    margin-top: -5vh;
+    width: 55%;
+}
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 14vh;
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+}
+
+.loader.loader-active {
+    border: 8px solid #f3f3f3; 
+    border-top: 8px solid rgba(1,1,1,0.25);
+    border-radius: 50%;
+    animation: fade 0.75s linear, spin 2s linear infinite;
+}
+
+@keyframes fade {
+    0% { opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.created-by {
+    margin-top: 1.5em;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+}
+/* Search bar from https://codepen.io/ahmadbassamemran/pen/rNjMXqg */
+
+.search-box {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+}
+  
+.input-search{
+    height: 50px;
+    width: 50px;
+    border-style: none;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+    background-color: rgba(1,1,1,0.22);
+    padding-right: 40px;
+    color:#fff;
+}
+
+.input-search::placeholder{
+    color:rgba(255,255,255,.5);
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+.btn-search{
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    color:#ffffff ;
+    background-color:transparent;
+    pointer-events: painted;  
+}
+
+.btn-search:focus ~ .input-search{
+    width: 45.57vw;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+.input-search:focus{
+    width: 45.57vw;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+.btn-search:hover {
+    background: rgba(1,1,1,0.08)
+}
