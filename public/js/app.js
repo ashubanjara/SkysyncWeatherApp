@@ -18,7 +18,7 @@ weatherForm.addEventListener('submit', (e) => {
             isTypeFinished = false
             const location = search.value[0].toUpperCase() + search.value.slice(1)
             loader.classList.add('loader-active')
-            fetch(`http://localhost:3000/weather?address=${location}`)
+            fetch(`/weather?address=${location}`)
             .then(response => {
                 search.value = ""
                 response.json()
