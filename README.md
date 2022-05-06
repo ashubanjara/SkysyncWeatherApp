@@ -1,4 +1,4 @@
-# node-weather-app
+SkySync Weather App
 
 Uses HTML/CSS/JS and Express/Node.js
 
